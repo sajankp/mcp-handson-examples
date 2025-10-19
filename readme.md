@@ -4,6 +4,27 @@ This project is a demonstration of the `mcp` library to create a tool server tha
 
 This is intended as a hands-on learning project for understanding how an MCP server works.
 
+## Quick Start
+
+1. Start the MCP server by running:
+```bash
+./run.sh
+```
+
+2. Create a `.vscode/mcp.json` file with the following content:
+```json
+{
+	"servers": {
+		"weather-http": {
+			"url": "http://localhost:8000/mcp",
+			"type": "http"
+		}
+	},
+	"inputs": []
+}
+```
+This will start the weather_streamable_http server that you can connect to via the MCP protocol.
+
 ## Features
 
 This server exposes several tools and resources:
